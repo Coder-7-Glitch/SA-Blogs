@@ -1,0 +1,588 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --heading-gradient: -webkit-linear-gradient(#f1ff29 52%, #b6004c);
+    --heading-color: #ffd11a;
+    --white-color: #fff;
+    --black-color: #000;
+    --heading-font: "New Amsterdam", sans-serif;
+    --bg-primary: #2e2e2e;
+    --bg-secondary: #303030;
+    --cards-bg: #3F3F3F;
+}
+
+body {
+    width: 100% !important;
+    height: 100% !important;
+    background: var(--bg-secondary) !important;
+    position: relative;
+}
+
+/* Navbar start */
+.nav-container ul li,
+a {
+    color: var(--white-color) !important;
+
+}
+
+.collapse ul li a {
+    font-size: 16px !important;
+}
+
+.navbar-brand {
+    font-size: 24px !important;
+    font-weight: 700;
+}
+
+.navbar {
+    background: #2e2e2e;
+}
+
+/* Navbar end */
+/* Blog start */
+.blog-section {
+    padding: 10rem 0 0 0;
+}
+
+.blog-heading h1 {
+    font-size: 72px;
+    color: var(--heading-color);
+    font-family: var(--heading-font);
+}
+
+.blog-heading p {
+    color: #d1d5db;
+}
+
+.card {
+    width: 100% !important;
+    height: 100% !important;
+    border: 0 !important;
+    border-radius: 10px !important;
+    background: #404040 !important;
+    overflow: hidden;
+    margin: auto;
+}
+
+.card-img-container {
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-img-top {
+    transition: 0.5s;
+    display: block;
+    width: 100%;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.2);
+}
+
+.date {
+    font-size: 15px;
+}
+
+.card-body {
+    color: var(--white-color) !important;
+    background: #404040;
+    border-radius: 0 0 10px 10px !important;
+}
+
+.card-title {
+    text-decoration: none;
+}
+
+.card-title h5 {
+    font-size: 25px !important;
+    font-weight: 600;
+}
+
+.card-text {
+    font-size: 16px;
+    margin: 15px 0 0 0 !important;
+    color: #d1d5db;
+}
+
+.card:hover .card-title {
+    text-decoration: underline;
+    color: var(--heading-color) !important;
+}
+
+/* Blog end */
+/* Cards start */
+/* HTML card start */
+.html {
+    position: absolute;
+    background: #00000041;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    display: none;
+}
+
+.html-card {
+    position: fixed;
+    background: var(--cards-bg);
+    top: 10%;
+    left: 5%;
+    width: 1250px;
+    height: 800px;
+    border-radius: 20px;
+    z-index: 3;
+}
+
+.html-img img {
+    border-radius: 10px;
+    width: 50%;
+}
+
+.html-content h1 {
+    color: var(--white-color);
+}
+
+.html-content p {
+    color: #d1d5db;
+}
+
+.cross-icon img {
+    cursor: pointer;
+}
+
+/* HTML card end */
+/* Bootstrap card start */
+.bootstrap {
+    position: absolute;
+    background: #00000041;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    display: none;
+}
+
+.boot-card {
+    position: fixed;
+    background: var(--cards-bg);
+    top: 10%;
+    left: 5%;
+    width: 1250px;
+    height: 800px;
+    border-radius: 20px;
+}
+
+.boot-img img {
+    border-radius: 10px;
+    width: 50%;
+}
+
+.boot-content h1 {
+    color: var(--white-color);
+}
+
+.boot-content p {
+    color: #d1d5db;
+}
+
+.cross-icon img {
+    cursor: pointer;
+}
+
+/* Bootstrap card end */
+/* JS card start */
+.js {
+    position: absolute;
+    background: #00000041;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    display: none;
+}
+
+.js-card {
+    position: fixed;
+    background: var(--cards-bg);
+    top: 10%;
+    left: 5%;
+    width: 1250px;
+    height: 800px;
+    border-radius: 20px;
+}
+
+.js-img img {
+    border-radius: 10px;
+    width: 50%;
+}
+
+.js-content h1 {
+    color: var(--white-color);
+}
+
+.js-content p {
+    color: #d1d5db;
+}
+
+.cross-icon img {
+    cursor: pointer;
+}
+
+/* JS card end */
+/* Java card start */
+.java {
+    position: absolute;
+    background: #00000041;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    display: none;
+}
+
+.java-card {
+    position: fixed;
+    background: var(--cards-bg);
+    top: 10%;
+    left: 5%;
+    width: 1250px;
+    height: 800px;
+    border-radius: 20px;
+}
+
+.java-img img {
+    border-radius: 10px;
+    width: 50%;
+}
+
+.java-content h1 {
+    color: var(--white-color);
+}
+
+.java-content p {
+    color: #d1d5db;
+}
+
+.cross-icon img {
+    cursor: pointer;
+}
+
+/* Java card end */
+/* CSS card start */
+.css {
+    position: absolute;
+    background: #00000041;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    display: none;
+}
+
+.css-card {
+    position: fixed;
+    background: var(--cards-bg);
+    top: 10%;
+    left: 5%;
+    width: 1250px;
+    height: 800px;
+    border-radius: 20px;
+}
+
+.css-img img {
+    border-radius: 10px;
+    width: 50%;
+}
+
+.css-content h1 {
+    color: var(--white-color);
+}
+
+.css-content p {
+    color: #d1d5db;
+}
+
+.cross-icon img {
+    cursor: pointer;
+}
+
+/* CSS card end */
+/* JS2 card start */
+.js2 {
+    position: absolute;
+    background: #00000041;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    display: none;
+}
+
+.js2-card {
+    position: fixed;
+    background: var(--cards-bg);
+    top: 10%;
+    left: 5%;
+    width: 1250px;
+    height: 800px;
+    border-radius: 20px;
+}
+
+.js2-img img {
+    border-radius: 10px;
+    width: 50%;
+}
+
+.js2-content h1 {
+    color: var(--white-color);
+}
+
+.js2-content p {
+    color: #d1d5db;
+}
+
+.cross-icon img {
+    cursor: pointer;
+}
+
+/* JS2 card end */
+/* Python card start */
+.python {
+    position: absolute;
+    background: #00000041;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    display: none;
+}
+
+.py-card {
+    position: fixed;
+    background: var(--cards-bg);
+    top: 10%;
+    left: 5%;
+    width: 1250px;
+    height: 800px;
+    border-radius: 20px;
+}
+
+.py-img img {
+    border-radius: 10px;
+    width: 50%;
+}
+
+.py-content h1 {
+    color: var(--white-color);
+}
+
+.py-content p {
+    color: #d1d5db;
+}
+
+.cross-icon img {
+    cursor: pointer;
+}
+
+/* Python card end */
+/* Cards end */
+.view-more {
+    position: relative;
+    display: inline-block;
+    padding: 12px 24px;
+    border: none;
+    font-size: 16px;
+    background-color: inherit;
+    border-radius: 10px;
+    font-weight: 600;
+    color: var(--black-color);
+    background: var(--white-color);
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.view-more span:last-child {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background-color: var(--heading-color);
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.view-more span:first-child {
+    position: relative;
+    z-index: 1;
+}
+
+.view-more:active {
+    scale: 0.95;
+}
+
+.view-more:hover span:last-child {
+    width: 150px;
+    height: 150px;
+    opacity: 1;
+}
+
+.name {
+    text-align: center;
+    color: #d1d5db;
+    font-size: 20px;
+}
+
+.divider {
+    color: var(--white-color);
+    width: 50%;
+    opacity: .7;
+    margin: auto;
+}
+
+/* Footer start */
+.footer-section {
+    background: var(--bg-secondary);
+}
+
+.footer-title {
+    font-family: var(--heading-font);
+    color: var(--heading-color) !important;
+    text-decoration: none;
+    font-size: 30px !important;
+    letter-spacing: 2px;
+}
+
+.footer-divider {
+    width: 3px;
+    height: 50px;
+    background-color: var(--white-color);
+    border: none;
+    margin: 0 auto;
+    opacity: 1;
+}
+
+.copyright {
+    margin-bottom: 0 !important;
+    font-size: 18px;
+    color: var(--white-color);
+    font-weight: 300;
+}
+
+.wrapper {
+    display: inline-flex;
+    list-style: none;
+    height: 120px;
+    width: 100%;
+    padding-top: 40px;
+    font-family: "Poppins", sans-serif;
+    justify-content: center;
+}
+
+.wrapper .icon {
+    position: relative;
+    background: #fff;
+    border-radius: 50%;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #fff;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #fff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .facebook {
+    color: #2e2e2e;
+}
+
+.wrapper .instagram {
+
+    color: #2e2e2e;
+}
+
+.wrapper .email {
+    color: #2e2e2e;
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+    background: #1877f2;
+    color: #fff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+    background: #e4405f;
+    color: #fff;
+}
+
+.wrapper .email:hover,
+.wrapper .email:hover .tooltip,
+.wrapper .email:hover .tooltip::before {
+    background: #1da1f2;
+    color: #fff;
+}
+
+/* Footer end */
